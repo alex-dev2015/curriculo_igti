@@ -1,0 +1,79 @@
+body {
+  padding: 10px;
+  background-color: black;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 123, 193) 35%,
+    rgb(238, 238, 238) 35%,
+    rgb(238, 238, 238) 100%
+  );
+}
+
+.topo {
+  background-color: rgb(3, 147, 210);
+  /* border: 2px solid red; */
+  padding: 20px;
+  height: 100px;
+}
+
+.header-title {
+  display: flex;
+}
+
+.header-items {
+  display: flex;
+}
+
+img {
+  border-radius: 50%;
+  border: 10px solid rgb(255, 255, 255);
+}
+
+.containner {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  -webkit-box-shadow: -35px 32px 34px rgba(50, 50, 50, 0.815);
+  -moz-box-shadow: -35px 32px 34px rgba(50, 50, 50, 0.815);
+  box-shadow: -35px 32px 34px rgba(50, 50, 50, 0.815);
+  margin-bottom: 5%;
+  background-color: rgb(231, 231, 233);
+}
+
+h1 {
+  padding: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: initial;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid ghostwhite;
+  /* width: 400px; */
+}
+
+.dados-pessoais {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#dados {
+  margin-left: 30px;
+  list-style-type: disc;
+}
+table,
+tr,
+td,
+th {
+  padding: 5px;
+  border: 1px solid gray;
+  margin-bottom: 30px;
+}
+th {
+  background-color: #ddd;
+}
