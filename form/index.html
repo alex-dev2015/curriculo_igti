@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/form.css">
+    
     <title>Cadastro de Currículo</title>
 </head>
 <body>
+   <div class="container"> 
     <h1>Cadastro de Nomes</h1>
     <form>
-           <label>Informe o seu nome:</label> 
+            
            <input type="text" id="name_user" placeholder="Informe o seu Nome" />
-           <input type="submit" value="Cadastrar"/>
            <span id="nameLength"></span> 
     </form>
     <h2>Nomes cadastrados até o momento</h2>
     <div id="names"></div>
+</div>
     <script src="../js/script.js"></script>
 </body>
 </html>
