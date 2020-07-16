@@ -39,6 +39,22 @@ function activateInput(){
 }
 
 function render(){
+   function createDeleteButton(index){
+      function deleteName(){
+          console.log(index);
+         globalNames.splice(index, 1);
+         render();
+      }  
+
+    var button = document.createElement('button');
+    button.classList.add('deleteButton');
+    button.textContent = 'X';
+
+    button.addEventListener('click', deleteName);
+
+    return button;
+   } 
+
    var divNames = document.querySelector('#names'); 
    divNames.innerHTML = ''; 
   
@@ -47,16 +63,15 @@ function render(){
    for(var i = 0; i < globalNames.length; i++){
       var currentName = globalNames[i]; 
       var li = document.createElement('li');
-      
-      var button = document.createElement('button');
-      button.classList.add('deleteButton');
-      button.textContent = 'X';
+      var button = createDeleteButton(i);
+     
       
       var span = document.createElement('span');
       span.textContent = currentName;  
       
       li.appendChild(button);
       li.appendChild(span);
+      
       ul.appendChild(li);
    }
    
